@@ -143,13 +143,13 @@ contract('AddressBook', accounts => {
         assert.isOk(event);
       });
 
-        it('should set existence of all removed addresses to false', async () => {
-            await addressBook.clear({ from: owner });
+      it('should set existence of all removed addresses to false', async () => {
+        await addressBook.clear({ from: owner });
 
-            assert.isFalse(await addressBook.contains(accounts[0]));
-            assert.isFalse(await addressBook.contains(accounts[1]));
-            assert.isFalse(await addressBook.contains(accounts[2]));
-        });
+        assert.isFalse(await addressBook.contains(accounts[0]));
+        assert.isFalse(await addressBook.contains(accounts[1]));
+        assert.isFalse(await addressBook.contains(accounts[2]));
+      });
 
       it('should clear address book', async () => {
         await addressBook.clear({ from: owner });

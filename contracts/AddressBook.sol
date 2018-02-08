@@ -141,7 +141,7 @@ contract AddressBook is Ownable {
     function index(address _address)
         internal
         view
-        returns (uint)
+        returns (uint256)
     {
         for (uint i = 0; i < book.length; i++) {
             if (_address == book[i]) {

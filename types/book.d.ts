@@ -32,9 +32,7 @@ declare module 'book' {
         options?: TransactionOptions
       ): Promise<TransactionResult>;
 
-      clear(
-        options?: TransactionOptions
-      ): Promise<TransactionResult>;
+      clear(options?: TransactionOptions): Promise<TransactionResult>;
 
       contains(address: Address): Promise<boolean>;
 
