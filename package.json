@@ -1,0 +1,37 @@
+{
+  "name": "address-book",
+  "version": "0.2.0",
+  "description": "Allows to store addresses in contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run compile && truffle test",
+    "compile": "tsc && truffle compile",
+    "format": "prettier --write *.ts **/*.ts test/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harzo/address-book-contract.git"
+  },
+  "author": {
+    "name": "Wojciech Harzowski",
+    "url": "https://github.com/harzo/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.0.8",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.0.57",
+    "@types/ramda": "^0.25.8",
+    "bignumber.js": "^5.0.0",
+    "chai": "^4.1.2",
+    "prettier": "^1.9.2",
+    "ramda": "^0.25.0",
+    "solhint": "^1.1.10",
+    "truffle": "4.0.6",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "zeppelin-solidity": "^1.6.0"
+  }
+}

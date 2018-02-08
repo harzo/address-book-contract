@@ -1,0 +1,12 @@
+{
+  "generator-ts-truffle": {
+    "name": "address-book",
+    "mainType": "book",
+    "author": "Wojciech Harzowski",
+    "authorUrl": "https://github.com/harzo/",
+    "contracts": [
+      "AddressBook"
+    ],
+    "solidityVersion": "0.4.19"
+  }
+}
